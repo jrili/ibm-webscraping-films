@@ -32,9 +32,9 @@ python -m pip install -r requirements.txt
 ## 1. Analyze the HTML code for relevant information
 1. Open the web page in a browser then locate the required table.
 2. Right-click on the table and click `Inspect` or something similar, depending on what browser you are using.
-![alt text](image.png)
+![alt text](resources/image.png)
 3. This opens the HTML code for the page and takes you directly to the point where the definition of the table begins. Take note of this structure in preparation for webscraping, i.e. what tags to look for for each row.
-![alt text](image-1.png)
+![alt text](resources/image-1.png)
 
 ## 2. Load the webpage for webscraping
 Develop a script that loads the entire web page and parses the resulting text in HTML format. The `requests` and `BeautifulSoup` (`bs4`) packages will be useful here.
