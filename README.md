@@ -50,6 +50,7 @@ _(Tested in Python 3.13)_
 ```
 python webscraping_movies.py
 ```
+_Also available with sample outputs and explanations in notebook: [webscraping_top50films.ipynb](https://github.com/jrili/ibm-webscraping-films/blob/master/webscraping_top50films.ipynb)_
 
 # Acknowledgements
 ## Course Instructors
