@@ -25,7 +25,6 @@ for row in rows:
     if count < NUM_ENTRIES_TO_SCRAPE:
         cells = row.find_all('td')
         if len(cells) > 0:
-            print(f"Found column #{count}: {cells}")
 
             # For titles with hyperlinks, get the contents of the <a> tag
             # By default, extract film title directly through .contents
@@ -37,7 +36,7 @@ for row in rows:
             data_dict = {"Average Rank": int(cells[0].contents[0]),
                         "Film": str(film_title),
                         "Year": int(cells[2].contents[0])}
-            print(f"\tExtracted data: {data_dict}\n")
+            print(f"Found row #{count}: {data_dict}")
             output_rows_list.append(data_dict)
             count = count + 1
     else:
