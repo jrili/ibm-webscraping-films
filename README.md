@@ -29,15 +29,15 @@ python -m pip install -r requirements.txt
 
 # Project Tasks
 
-## 1. Analyze the HTML code for relevant information
+## 1. Load the webpage for webscraping
+Develop a script that loads the entire web page and parses the resulting text in HTML format. The `requests` and `BeautifulSoup` (`bs4`) packages will be useful here.
+
+## 2. Analyze the HTML code for relevant information
 1. Open the web page in a browser then locate the required table.
 2. Right-click on the table and click `Inspect` or something similar, depending on what browser you are using.
 ![alt text](resources/00_inspect_table.png)
 3. This opens the HTML code for the page and takes you directly to the point where the definition of the table begins. Take note of this structure in preparation for webscraping, i.e. what tags to look for for each row.
 ![alt text](resources/01_html_table.png)
-
-## 2. Load the webpage for webscraping
-Develop a script that loads the entire web page and parses the resulting text in HTML format. The `requests` and `BeautifulSoup` (`bs4`) packages will be useful here.
 
 ## 3. Scrape the required information
 Develop a script that scrapes the Average Rank, Film, and Year of the Top 50 Highly-Ranked Films from the HTML code.
